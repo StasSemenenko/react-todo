@@ -21,6 +21,7 @@ export default function App() {
 
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos));
+    console.log(1)
   },[todos]); 
 
   const addTodo = (text) => {
@@ -47,14 +48,14 @@ export default function App() {
 
   return (
     <Context.Provider value={{
-      removeTodo, doneTodo, todos
+      removeTodo, doneTodo
     }}>
       <div className="App">
         <div className="header">Todo:</div>
 
         <div className="wrapper">
           <TodoForm addTodo={addTodo} />
-          <TodoList todos={todos} removeTodo={removeTodo} doneTodo={doneTodo} />
+          <TodoList todos={todos} />
         </div>
       </div>
     </Context.Provider>

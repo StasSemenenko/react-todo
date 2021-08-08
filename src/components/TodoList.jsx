@@ -1,6 +1,6 @@
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ todos, removeTodo, doneTodo }) => {
+const TodoList = ({ todos }) => {
   return (
     <div className="list">
       {todos.length ? (
@@ -8,8 +8,6 @@ const TodoList = ({ todos, removeTodo, doneTodo }) => {
           <TodoItem
             key={item.id}
             item={item}
-            removeTodo={removeTodo}
-            doneTodo={doneTodo}
           />
         ))
       ) : (

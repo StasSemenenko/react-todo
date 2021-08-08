@@ -26,6 +26,11 @@ textarea {
   color: inherit;
 }
 
+.wrapper {
+  width: 350px;
+  margin: auto;
+}
+
 .header {
   text-align: center;
   background-color: #2980b9;
@@ -35,11 +40,6 @@ textarea {
   font-size: 22px;
 }
 
-.wrapper {
-  width: 50%;
-  min-width: 300px;
-  margin: auto;
-}
 
 form {
   padding: 20px;
@@ -88,7 +88,6 @@ form button {
 
 .list .empty {
   text-align: center;
-  font-size: 14px;
   opacity: 0.5;
   padding: 20px;
 }
@@ -98,13 +97,11 @@ form button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
   padding: 5px 0px;
 }
 
 .list .item .done,
 .list .item .notdone {
-  font-size: 15px;
   margin-right: 5px;
 }
 
@@ -129,12 +126,12 @@ form button {
 .list .item span {
   opacity: 0.5;
   margin: 0px 5px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .list .item button {
   padding: 4px 7px;
-  font-size: 10px;
+  font-size: 12px;
   background-color: #e74c3c;
   color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
